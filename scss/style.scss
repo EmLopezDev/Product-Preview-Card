@@ -167,3 +167,39 @@ body {
     font-size: rem(13);
     line-height: 120%;
 }
+
+@media screen and (max-width: rem(600)) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: rem(350);
+        height: rem(750);
+
+        &__image {
+            width: 100%;
+        }
+
+        &__image--desktop {
+            display: none;
+        }
+
+        &__image--mobile {
+            display: block;
+            width: 100%;
+            height: rem(342);
+            border-radius: rem(8) rem(8) 0 0;
+        }
+
+        &__details {
+            padding: rem(32);
+        }
+
+        &__description {
+            margin-bottom: rem(24);
+        }
+
+        &__price {
+            margin-bottom: rem(24);
+        }
+    }
+}
